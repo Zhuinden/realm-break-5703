@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+    <View
+        android:background="#ECECEC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/dummyField1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField2"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField3"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField4"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField5"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField6"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField7"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField8"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField9"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField11"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField12"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField13"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField14"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <TextView
+        android:id="@+id/dummyField15"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Hello Field"/>
+    <View
+        android:background="#ECECEC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
