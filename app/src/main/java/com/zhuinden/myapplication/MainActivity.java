@@ -52,7 +52,8 @@ public class MainActivity
                                         .subscribeOn(Schedulers.io()) //
                                         .subscribe( //
                                                     aLong -> {
-                                                        try(Realm r = Realm.getDefaultInstance()) {
+                                                        //try(Realm r = Realm.getDefaultInstance()) {
+                                                        Realm r = Realm.getDefaultInstance(); // LET'S BREAK THE WORLD
                                                             Random random = new Random();
                                                             int bound = random.nextInt(50) + 50;
                                                             r.executeTransaction(realm -> {
@@ -79,14 +80,15 @@ public class MainActivity
                                                                     person.getDogs().add(proxyDog);
                                                                 }
                                                             });
-                                                        }
+                                                        //}
                                                     }));
 
         compositeDisposable.add(Observable.interval(400, TimeUnit.MILLISECONDS) //
                                         .subscribeOn(Schedulers.io()) //
                                         .subscribe( //
                                                     aLong -> {
-                                                        try(Realm r = Realm.getDefaultInstance()) {
+                                                        //try(Realm r = Realm.getDefaultInstance()) {
+                                                        Realm r = Realm.getDefaultInstance(); // LET'S BREAK THE WORLD
                                                             r.executeTransaction(realm -> {
                                                                 Random random = new Random();
                                                                 int bound = random.nextInt(25) + 25;
@@ -98,7 +100,7 @@ public class MainActivity
                                                                     dogs.get(index).deleteFromRealm();
                                                                 }
                                                             });
-                                                        }
+                                                        //}
                                                     }));
 
         compositeDisposable.add(Observable.interval(250, TimeUnit.MILLISECONDS) //
@@ -106,16 +108,17 @@ public class MainActivity
                                         .subscribeOn(Schedulers.io()) //
                                         .subscribe( //
                                                     aLong -> {
-                                                        try(Realm r = Realm.getDefaultInstance()) {
+                                                        //try(Realm r = Realm.getDefaultInstance()) {
+                                                        Realm r = Realm.getDefaultInstance(); // LET'S BREAK THE WORLD
                                                             Random random = new Random();
-                                                            int bound = random.nextInt(750) + 750;
+                                                            int bound = random.nextInt(100) + 100;
                                                             r.executeTransaction(realm -> {
-                                                                //for(int i = 0; i < bound; i++) {
-                                                                //    RealmResults<Dog> dogs = realm.where(Dog.class).findAll(); // let's break the world
-                                                                //    int size = dogs.size();
-                                                                //    int index = random.nextInt(size);
-                                                                //    Dog dog = dogs.get(index);
-                                                                for(Dog dog : realm.where(Dog.class).findAll()) {
+                                                                for(int i = 0; i < bound; i++) {
+                                                                    RealmResults<Dog> dogs = realm.where(Dog.class).findAll(); // let's break the world
+                                                                    int size = dogs.size();
+                                                                    int index = random.nextInt(size);
+                                                                    Dog dog = dogs.get(index);
+                                                                //for(Dog dog : realm.where(Dog.class).findAll()) {
                                                                     //noinspection ConstantConditions
                                                                     dog.setDummyDogField1(String.valueOf(random.nextLong()));
                                                                     dog.setDummyDogField2(String.valueOf(random.nextLong()));
@@ -134,7 +137,7 @@ public class MainActivity
                                                                     dog.setDummyDogField15(String.valueOf(random.nextLong()));
                                                                 }
                                                             });
-                                                        }
+                                                        //}
                                                     }));
     }
 
